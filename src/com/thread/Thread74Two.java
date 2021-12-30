@@ -24,7 +24,8 @@ public class Thread74Two {
             setARandomeNumber(thread74Two);
         });
 
-        thread1.start(); thread2.start();
+        thread1.start();
+        thread2.start();
 
         try{
             thread1.join();

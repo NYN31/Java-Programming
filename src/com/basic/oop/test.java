@@ -5,5 +5,8 @@ public class test {
         Hello hlo = new HelloImpl();
         hlo.hello();
         HelloImpl.helloStatic();
+
+        System.out.println(Runtime.getRuntime().availableProcessors());
+
     }
 }

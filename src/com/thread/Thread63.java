@@ -9,19 +9,19 @@ public class Thread63 {
         Thread t1 = new Thread(() -> {
             findTheTopFibonacciNumber();
             doneWorking = true;
-            System.out.println("Thread name: " + Thread.currentThread().getName());
+            System.out.println("Thread t1 : " + Thread.currentThread().getName() + " Finished!");
         });
-        t1.setName("Tread t1");
+        t1.setName("t1");
         t1.start();
 
         try{
-            Thread.sleep(5);
+            Thread.sleep(0);
             if(doneWorking) System.out.println("t1 thread finished");
             else System.out.println("t1 thread not finished");
         } catch (InterruptedException e){
             e.printStackTrace();
         }
-        System.out.println("Thread name: " + Thread.currentThread().getName());
+        System.out.println("Thread : " + Thread.currentThread().getName() + " Finished!");
     }
 
     private static void findTheTopFibonacciNumber(){
