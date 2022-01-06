@@ -9,7 +9,7 @@ import java.util.concurrent.Future;
 
 public class TextCopierApp {
     public static void main(String[] args){
-        TextCopier jugbd = new TextCopier("https://codeforces.com/profile/SHN31");
+        TextCopier jugbd = new TextCopier("https://www.jugbd.org/");
         TextCopier masterDevSkill = new TextCopier("https://masterdevskills.com/");
         List<TextCopier> tasks = Arrays.asList(jugbd, masterDevSkill);
 

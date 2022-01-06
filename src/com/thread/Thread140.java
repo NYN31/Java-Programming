@@ -27,7 +27,9 @@ public class Thread140 {
         ServerSocket serverSocket = new ServerSocket(8080);
         while(true){
             Socket connection = serverSocket.accept();
-            serverRequest(connection);
+            Thread thread = new Thread(() -> {
+                serverRequest(connection);
+            });
         }
     }
 
