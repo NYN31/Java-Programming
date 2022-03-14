@@ -1,4 +1,4 @@
-package com.socket;
+package com.socket.clients;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -7,7 +7,7 @@ import java.io.PrintWriter;
 import java.net.Socket;
 import java.util.Scanner;
 
-public class PingClient {
+public class PingClientOne {
     Socket clientSocket;
 
     public void connect(String ip, int port) throws IOException {
@@ -26,7 +26,7 @@ public class PingClient {
     }
 
     public static void main(String[] args) throws IOException, InterruptedException {
-        PingClient client = new PingClient();
+        PingClientOne client = new PingClientOne();
         client.connect("127.0.0.1", 6000);
 
         Scanner scanner = new Scanner(System.in);

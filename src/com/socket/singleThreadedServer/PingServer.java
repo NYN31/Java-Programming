@@ -1,4 +1,4 @@
-package com.socket;
+package com.socket.singleThreadedServer;
 
 import java.io.BufferedReader;
 import java.io.IOException;
