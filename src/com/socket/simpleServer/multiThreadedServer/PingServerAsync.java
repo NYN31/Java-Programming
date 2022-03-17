@@ -1,4 +1,4 @@
-package com.socket.multiThreadedServer;
+package com.socket.simpleServer.multiThreadedServer;
 
 import java.io.IOException;
 import java.net.ServerSocket;
