@@ -9,6 +9,10 @@ public class EX4_AnonymousClassMain {
             }
         });
         t1.start();
+
+
+
+
         Thread t2 = new Thread(() -> doWork("Comes form lambda Expression."));
         t2.start();
     }
