@@ -10,6 +10,8 @@ public class enum370 {
 
     public static void main(String[] args){
         People p = People.valueOf("John");
+        Integer x = People.John.getAge();
         System.out.println(p);
+        System.out.println(x);
     }
 }

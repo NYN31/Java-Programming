@@ -1,4 +1,4 @@
-package com.advance.chapter2;
+package com.advance.lambda;
 
 public class targetTyping {
     /***
